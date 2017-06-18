@@ -4,11 +4,13 @@
 
 ## Required Packages:
 The following packages were used. These .jar are included in the repo.
-```
-Hadoop: [org.apache.hadoop:hadoop-common:2.3.0](http://search.maven.org/remotecontent?filepath=org/apache/hadoop/hadoop-common/2.3.0/hadoop-common-2.3.0.jar)
-Pig: [org.apache.pig:pig:0.14](http://search.maven.org/remotecontent?filepath=org/apache/pig/pig/0.14.0/pig-0.14.0.jar)
-Stemmer: [de.julielab:uea-stemmer:0.1](http://search.maven.org/remotecontent?filepath=de/julielab/uea-stemmer/0.1/uea-stemmer-0.1.jar)
-```
+
+Hadoop: [org.apache.hadoop;hadoop-common:2.3.0](http://search.maven.org/remotecontent?filepath=org/apache/hadoop/hadoop-common/2.3.0/hadoop-common-2.3.0.jar)
+
+Pig: [org.apache.pig;pig;0.14](http://search.maven.org/remotecontent?filepath=org/apache/pig/pig/0.14.0/pig-0.14.0.jar)
+
+Stemmer: [de.julielab;uea-stemmer:0.1](http://search.maven.org/remotecontent?filepath=de/julielab/uea-stemmer/0.1/uea-stemmer-0.1.jar)
+
 ## Useful commands
 Some of the used commands for quick copy-paste reference :)
 

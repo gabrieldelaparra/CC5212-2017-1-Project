@@ -25,41 +25,14 @@ parsed = FOREACH parsed GENERATE $0, $1, $2, $3, Similar($2, $3), Different($2, 
 parsed = FOREACH parsed GENERATE $0, $1, $2, $3, $4, $5, (0.8*$4 + 0.2*$5);
 parsed = FOREACH parsed GENERATE $0, $1, $2, $3, $4, $5, $6, ($6 > 0.5 ? true : false);
 
--- STORE parsed INTO 'results';
-
 matchItems = FILTER parsed by ($1 == $7);
 realTrue = GROUP matchItems ALL;
 realTrueCount = FOREACH realTrue GENERATE COUNT(matchItems);
 
--- items = GROUP parsed ALL;
--- itemCount = FOREACH items GENERATE COUNT(*);
+items = GROUP parsed ALL;
+itemCount = FOREACH items GENERATE COUNT(*);
 
 DUMP realTrueCount;
--- DUMP itemCount;
-
--- DUMP parsed;
-
--- STORE itemCount INTO 'results';
-
-
-
-/* 
-parsed = FOREACH raw_data GENERATE $0, $5, Simplify($3), Simplify($4);
-parsed = FOREACH parsed GENERATE $0, $1, $2, $3, Similar($2, $3), Different($2, $3);
-parsed = FOREACH parsed GENERATE $0, $1, $2, $3, $4, $5, (0.8*$4 + 0.2*$5);
-parsed = FOREACH parsed GENERATE $0, $1, $2, $3, $4, $5, $6, ($6 > 0.5 ? true : false);
-
-
-DUMP parsed;
-
-
-
-test_data2 = LIMIT parsed 30;
-DUMP test_data2;
-realTrue = FILTER parsed by $1 == $7;
-
-
-itemCount = FOREACH parsed GENERATE COUNT(*);
 DUMP itemCount;
 
-*/
+STORE parsed INTO 'results';

@@ -13,7 +13,7 @@ Gabriel De La Parra
 
 ## Context
 
-Our project is based on the Kaggle Quora Question-Pair comptetition. 
+Our project is based on the [Kaggle Quora Question-Pair comptetition.](https://www.kaggle.com/c/quora-question-pairs) 
 
 The goal of this project is to establish, using natural language processing tools, whether a pair of questions have the same intent, in the sense that the answer to any one of them would also answer the other. Specifically, we're measuring to what extent can term similarity help establish this fact, since we're counting on a dataset with ground-truth.
 

@@ -1,4 +1,15 @@
 # MDP Project
+**Universidad de Chile**
+
+**Departamento de Ciencias de la Computación**
+
+**CC5212 - Procesamiento Masivo de Datos**
+
+Ignacio Perez
+
+Omar Sanhaji
+
+Gabriel De La Parra
 
 ## Context
 

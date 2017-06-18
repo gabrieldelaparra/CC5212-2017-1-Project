@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="org.mdp.project.pig" basedir="." default="dist">
+   <property name="name" value="similar" />
+   <property name="src" value="src" />
+   <property name="version" value="" />
+   <property name="dist" value="dist" />
+	
+   <path id="classpath">
+      <fileset dir="lib">
+         <include name="*.jar" />
+      </fileset>
+   </path>
+	
+   <target name="prepare">
+      <tstamp />
+      <mkdir dir="bin" />
+      <mkdir dir="dist" />
+   </target>
+	
+   <target name="dist" depends="clean,prepare">
+      <javac destdir="bin" srcdir="src" includes="org/mdp/**" source="7" target="7" debug="true" debuglevel="lines,source">
+         <classpath refid="classpath" />
+      </javac>
+      <jar jarfile="${dist}/${name}.jar" basedir="bin">
+         <manifest>
+            <attribute name="Main-Class" value="org.mdp.project.pig" />
+         </manifest>
+      </jar>
+   </target>
+	
+   <target name="clean">
+      <delete dir="bin" />
+      <delete>
+         <fileset dir="dist">
+            <include name="*.jar" />
+         </fileset>
+      </delete>
+   </target>
+	
+</project>

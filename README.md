@@ -72,6 +72,12 @@ Pig offers several benefits, since it does not requires compilation and dependen
 
 There was a lot of time spent implementing and debugging the solution. Debugging on the cluster wasn't comfortable at first (is it even possible for UDFs?). Managing Java dependencies was a heavy waste of time. So, there wasn't enough resources left to think about what we were doing, and there were some losses like the finally unused TF-IDF.
 
+## Report and Presentation
+
+[Overleaf report](https://www.overleaf.com/10029701whtgnrgcsvrd)
+
+[Google slides presentation](https://docs.google.com/presentation/d/1Q_mVNZ5vcDTOUoHMra-FgQYWhE3MMxWBPYAuq78imTg/edit?usp=sharing)
+
 ## Required Packages:
 The following packages were used. These .jar are included in the repo.
 
